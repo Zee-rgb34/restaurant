@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thandeka Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Slideshow -->
+    <section class="hero">
+
+        <div class="slide" style="background-image: url('num4.jpeg');"></div>
+        <div class="slide" style="background-image: url('num2.jpeg');"></div>
+        <div class="slide" style="background-image: url('num3.jpeg');"></div> 
+
+        <div class="hero-content">
+            <h1>The Best in Town</h1>
+            <p>Are you hungry and ready to feast? Look no further you're at the right place!</p>
+        </div>
+
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-container">
+        <h2>Start Your Order</h2>
+
+        <div class="ziky">
+
+            <a href="menu.html" class="menu-card">
+                <img src="coffe.jpeg" alt="Breakfast Special">
+                <div class="menu-title">Breakfast Special</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="chapati.jpeg" alt="Chapati Meals">
+                <div class="menu-title">Chapati Meals</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="fish.jpeg" alt="Fish Dishes">
+                <div class="menu-title">Fish Dishes</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="pizza.jpeg" alt="Main Meals">
+                <div class="menu-title">Main Meals</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="soup.jpeg" alt="Soups">
+                <div class="menu-title">Soups</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="Spaghetti.jpeg" alt="Pasta and Light Meals">
+                <div class="menu-title">Pasta & Light Meals</div>
+            </a>
+
+            <a href="menu.html" class="menu-card">
+                <img src="drinks.jpeg" alt="Drinks">
+                <div class="menu-title">Drinks</div>
+            </a>
+
+        </div>
+    </section>
+    <div class="order-now">
+        <h1>Mouth watering yet?</h1>
+        <a href="menu.html" class="order-now-button">
+        <div class="thom">Dine</div>
+        </a>
+        <a href="contact.html" class="order-now-button">
+        <div class="thom">Order Now</div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="blair">
+        <h2>Thandeka's Cuisine</h2>
+        <p class="foot-para">Where delicious food meets exceptional service!</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <p>&copy; 2026 Thandeka's Cuisine. All rights reserved.</p>
+    </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+
+        setInterval(nextSlide, 5000); // Change every 5 seconds
+    </script>
+
+</body>
+</html>
